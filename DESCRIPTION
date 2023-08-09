@@ -1,11 +1,17 @@
 Package: winratiosamplesize
 Type: Package
-Title: What the Package Does (Title Case)
+Title: win ratio sample size estimation
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c(person("Lauren", "Bonner", email = "lauren.bonner@northwestern.edu", role=c("cre", "aut")), person("Denise", "Scholtens", role=c("aut")))
+Description: A simulation-based sample size calculation approach, relying on the relationship between the win ratio and the rank distribution
+License: use_mit_license()
 Encoding: UTF-8
 LazyData: true
+Imports:
+  BiasedUrn,
+  doParallel,
+  foreach, 
+  copula,
+  dplyr,
+  splitstackshape
+RoxygenNote: 7.2.3

@@ -9,6 +9,7 @@ Encoding: UTF-8
 LazyData: true
 Imports:
   BiasedUrn,
+  parallel,
   doParallel,
   foreach, 
   copula,

@@ -15,4 +15,7 @@ Imports:
   copula,
   dplyr,
   splitstackshape
+Depends: 
+  doParallel,
+  dplyr
 RoxygenNote: 7.2.3

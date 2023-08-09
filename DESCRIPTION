@@ -12,10 +12,7 @@ Imports:
   parallel,
   doParallel,
   foreach, 
-  copula,
-  dplyr,
-  splitstackshape
+  copula
 Depends: 
-  doParallel,
-  dplyr
+  doParallel
 RoxygenNote: 7.2.3

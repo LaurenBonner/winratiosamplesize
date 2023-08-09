@@ -278,7 +278,7 @@ WinRatio_sampsize <- function(n_arm_1, n_arm_2, alpha=0.05, WinRatio1=NULL, p1=N
 
     #try the copula trick to induce dependence
     set.seed(10000+j)
-    rc <- copula::rCopula(n=n_arm_1,copula=normalCopula(corr))
+    rc <- copula::rCopula(n=n_arm_1,copula=copula::normalCopula(corr))
 
     arm_1_dep_p1 <- rep(NA,n_arm_1)
     arm_1_dep_p2 <- rep(NA,n_arm_1)
@@ -290,7 +290,7 @@ WinRatio_sampsize <- function(n_arm_1, n_arm_2, alpha=0.05, WinRatio1=NULL, p1=N
 
     #Arm B
     set.seed(20000+j)
-    rc_2 <- copula::rCopula(n=n_arm_2,copula=normalCopula(corr))
+    rc_2 <- copula::rCopula(n=n_arm_2,copula=copula::normalCopula(corr))
 
     arm_2_dep_p1 <- rep(NA,n_arm_2)
     arm_2_dep_p2 <- rep(NA,n_arm_2)

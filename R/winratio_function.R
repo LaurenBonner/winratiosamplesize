@@ -67,7 +67,7 @@ WinRatio_sampsize <- function(n_arm_1, n_arm_2, alpha=0.05, WinRatio1=NULL, p1=N
 
   no_cores <- parallel::detectCores() - 1
   cl <- parallel::makeCluster(no_cores)
-  doParallel:registerDoParallel(cl)
+  registerDoParallel(cl)
 
   n_total<-n_arm_1+n_arm_2
   odd<-ifelse(n_total%%2 == 1,1,0)

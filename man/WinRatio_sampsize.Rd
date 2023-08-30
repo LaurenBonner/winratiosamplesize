@@ -54,7 +54,8 @@ WinRatio_sampsize(
 \item{print.iter}{If TRUE, each simulation number will be printed after completion}
 }
 \value{
-A list with components including the median, 25th percentile, 75th percentile, mean, and standard deviation of Win Ratios across simulations
+A list with components including the median, 25th percentile, 75th percentile, mean, and standard deviation of the true win ratios assuming complete data and the
+observed win ratios assuming censoring and/or ties across simulations;
 and the power of the proposed sample size under specified assumptions
 }
 \description{

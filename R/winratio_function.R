@@ -16,7 +16,8 @@
 #' @param seed The seed for random number generation
 #' @param boot The number of bootstrap samples within each simulation
 #' @param print.iter If TRUE, each simulation number will be printed after completion
-#' @return A list with components including the median, 25th percentile, 75th percentile, mean, and standard deviation of Win Ratios across simulations
+#' @return A list with components including the median, 25th percentile, 75th percentile, mean, and standard deviation of the true win ratios assuming complete data and the
+#' observed win ratios assuming censoring and/or ties across simulations;
 #' and the power of the proposed sample size under specified assumptions
 #' @examples sim_example<-WinRatio_sampsize(n_arm_1=10,n_arm_2=10,alpha=0.05,p1=0.6,n.iter=100,seed=1234,boot=100)
 #' @export
